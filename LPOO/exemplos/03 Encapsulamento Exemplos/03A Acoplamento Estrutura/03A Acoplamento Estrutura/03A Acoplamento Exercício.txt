@@ -1,0 +1,10 @@
+03A Acoplamento Estrutura
+
+Teoria
+- Como podemos definir acoplamento no contexto da Programação Orientada a Objetos
+
+Prática
+- Observe* os exemplos ExemploAcoplamentoForte.zip e ExemploAcoplamentoFraco.zip código e aponte os benefícios do uso de encapsulamento neste exemplo
+*Dicas:
+ - Qual é a API mais facil de usar?
+ - Tente adicionar um Produto nulo em cada um dos exemplos e veja o que acontece 

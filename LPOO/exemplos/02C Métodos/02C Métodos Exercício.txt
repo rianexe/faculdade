@@ -1,0 +1,13 @@
+02C Métodos
+
+Teoria
+- Qual a convenção para definição do nome de um método?
+
+Prática
+Extraia o código fonte de "02C Métodos Exercício.zip", então tendo as classes Produto e UsaProduto como exemplo:
+
+- Na classe Pessoa:
+  - Crie um método inicializaPessoa que receba dois parâmetros e inicialize os dois atributos do objeto (nome e idade).
+  - Crie um método imprime que imprima os atributos.
+- Na classe UsaPessoa
+  - Faça uso dos dois métodos para inicializar e imprimir os atributos dos objetos criados.

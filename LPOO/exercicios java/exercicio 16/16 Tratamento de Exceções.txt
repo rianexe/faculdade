@@ -1,0 +1,33 @@
+16 Tratamento de Exceções
+
+Instruções
+Teoria
+- Qual a principal diferença entre a hierarquia de Error e Exception?
+
+Error: representa problemas graves que geralmente não podem ser tratados pelo programa, como erros no ambiente de execução. Indicam falhas no próprio sistema ou na JVM.
+ex: OutOfMemoryError, StackOverflowError
+
+Exception: representa condições anormais que podem ocorrer durante a execução do programa e que podem ser tratadas ou propagadas.
+ex: IOException, SQLException
+
+- O que são exceções verificadas (checked exceptions)?
+
+As exceções verificadas são aquelas que o compilador obriga o programador a tratar, utilizando o try-catch ou declarando no método com throws. São exceções que indicam situações que podem ocorrer, mas não por erro de programação, mas por fatores externos.
+ex: problemas de rede, falha ao acessas um arquivo, erros de entrada/saída
+ex de checked exceptions: FileNotFoundException, IOException
+
+
+- Como criamos exceções personalizadas?
+
+Criamos exceções personalizadas em Java através da criação de uma nova classe que herda de Exception ou de RuntimeException, permitindo o lançamento de erros específicos para a lógica do sistema.
+
+
+Prática
+Extraia as classes do arquivo "16 Tratamento de Exceções Exercício.zip" e realize o exercício conforme instruções abaixo:
+1.1 Realize o tratamento (try, catch, finally) das exceções não checadas da classe br.unip.sicc.exceptions.TesteRuntimeExceptions, indicadas em comentário da classe.
+  1.2 Compile e execute a classe br.unip.sicc.exceptions.TesteRuntimeExceptions e teste o tratamento de exceções realizado.
+
+2.1 Na interface br.unip.sicc.servico.Parceladora, faça com que o método parcela possa lançar (throws) a exceção checada br.unip.sicc.servico.ParcelamentoException  
+2.2 Observe a classe br.unip.sicc.servico.ParceladoraCheque a declaração do método parcela (throws) e o lançamento (throw) de uma ParcelamentoException quando o valor da parcela mínima é atingido (bloco if).
+2.3 Na classe br.unip.sicc.servico.ParceladoraCartao, substitua a impressão da mensagem de erro pelo lançamento (throw) de uma ParcelamentoException (como observado na classe br.unip.sicc.servico.ParceladoraCheque.
+2.4 Na classe  br.unip.sicc.app.UsaProduto, implemente o tratamento da exceção (try, catch, finally) para ParcelamentoException.

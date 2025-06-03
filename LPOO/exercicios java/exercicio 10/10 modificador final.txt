@@ -1,0 +1,17 @@
+10 Modificador final
+
+
+Teoria
+- Qual a convenção para definição do nome de uma constante?
+
+O nome de uma constante deve ser escrito em letras maiúsculas, com palavras separadas por underline (_). 
+Ex: PI, TAXA_DESCONTO.
+
+- Onde podemos utilizar o modificar final.
+Pode ser aplicado a variáveis, atributos, métodos e classes.
+
+- Como ele, modificador final, se comporta em cada utilização?
+   - Imutabilidade para Variáveis e Parâmetros: O valor atribuído não pode ser alterado após a inicialização.
+   - Imutabilidade para Atributos: Torna o atributo imutável (deve ser inicializado no momento da declaração ou no construtor).
+   - Impedimento de Sobrescrita para Métodos: Impede que o método seja sobrescrito por subclasses.
+   - Restrição de Herança para Classes: Impede que a classe seja herdada, tornando-a final (não pode ter subclasses).

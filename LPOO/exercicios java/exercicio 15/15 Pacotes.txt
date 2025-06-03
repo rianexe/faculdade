@@ -1,0 +1,67 @@
+15 Pacotes
+
+Teoria
+- Qual pacote do java que não obriga a declaração de pacotes?
+O pacote de java que não obriga declaração é o "default package".
+
+- É necessário realizar import de classes que estão na nossa aplicação? Quando?
+Não é necessário importar se as classes estão no mesmo pacote, porém é necessário importar se as classes estiverem em pacotes diferentes.
+
+- Para que serve a importação estática (import static)?
+Serve para importar membros estáticos (atributos ou métodos) de uma classe, permitindo que sejam usados sem precisar referenciar o nome da classe.
+
+- Como configurar o classpath na linha de comando para compilar e executar?
+O classpath define onde o Java deve procurar as classes que serão usadas na compilação e execução.
+
+javac -classpath caminho_da_biblioteca MinhaClasse.java
+
+Prática
+Extraia as classes do arquivo "15 Pacotes Exercício.zip" e realize o exercício conforme instruções abaixo:
+Observe que nesta pasta existem três pastas principais:
+- build (para o código compilado)
+- dist (para o jar)
+- src (código fonte)
+
+Na pasta do código fonte (src), organize as classes nos diretórios apontados abaixo e complemente com as declarações de package e import necessárias.
+br
+↳ unip
+   ↳ sicc
+       ↳ app
+      UsaProduto.java
+       ↳ entidades
+      Fornecedor.java
+      Produto.java
+      ProdutoDigital.java
+      Unidade.java
+       ↳ servico
+      ImpressoraProduto.java
+      ImpressoraProdutoPipe.java
+      ImpressoraProdutoXml.java
+      Parceladora.java
+      ParceladoraBoleto.java
+      ParceladoraCartao.java
+      ParceladoraCheque.java
+      PlanoDePagamento.java
+
+Na pasta do código fonte
+   Comando para compilar
+      javac br\unip\sicc\app\UsaProduto.java
+   Comando para executar
+      java br.unip.sicc.app.UsaProduto
+
+Apague todos os *.class
+
+Na pasta do código fonte
+   Comando para compilar para outra pasta (build na pasta pai)
+      javac -d ..\build br\unip\sicc\app\UsaProduto.java
+
+Na pasta do código compilado
+   Comando para criar um jar executável (incluir arquivo MANIFEST.MF com o Main-Class definida)
+      jar -cvfm ..\dist\nomeDoJar.jar META-INF\MANIFEST.MF br
+
+Configuração do classpath (parte teórica)
+Comando para compilar usando uma bilioteca
+javac -cp ..\lib\biblioteca.jar com.gmail.info.mcastro.UsaBiblioteca
+
+Comando para executar usando uma bilioteca
+java -cp ..\lib\biblioteca.jar;. com.gmail.info.mcastro.UsaBiblioteca

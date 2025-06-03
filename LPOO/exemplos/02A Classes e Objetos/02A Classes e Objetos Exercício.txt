@@ -1,0 +1,14 @@
+02A Classes e Objetos
+
+Teoria
+- Qual a diferença entre o Paradigma Procedural e o Paradigma Orientado a Objetos?
+- O que é abstração no contexto da análise orientada a objetos?
+- O que é coesão no contexto da análise orientada a objetos?
+
+Prática
+Tendo as classes Produto e UsaProduto como exemplo:
+
+- Crie a classe Pessoa
+- Crie a classe UsaPessoa executável, ou  seja, com o método main.
+   - no método main declare duas variáveis do tipo Pessoa e instancie dois objetos do tipo Pessoa
+

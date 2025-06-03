@@ -1,0 +1,4 @@
+06 AssociacaoTeoria
+- O que é acoplamento no contexto da análise orientada a objetos?
+
+Acoplamento é o grau de dependência entre classes ou módulos em um sistema orientado a objetos. Um alto acoplamento indica forte dependência entre classes, tornando o código rígido e difícil de manter. Já um baixo acoplamento significa que as classes são mais independentes, facilitando a manutenção e reutilização do código.

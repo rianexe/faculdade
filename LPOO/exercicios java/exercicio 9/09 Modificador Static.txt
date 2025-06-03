@@ -1,0 +1,29 @@
+09 Modificador Static
+
+Teoria
+- Por que os métodos de acesso (getters e setters) de um atributo estático é estático?
+Porque um atributo estático pertence à classe e não ao objeto. Isso significa que ele é compartilhado por todas as instâncias da classe.
+
+- Quando um bloco de inicilização estático (static{}) é executado? E um bloco de inicialização de instâncias ({})?
+É executado apenas uma vez, quando a classe é carregada pela primeira vez na memória, e o bloco de inicialização é executado toda vez que um novo objeto da classe é criado.
+
+Prática
+Extraia o código fonte de "09 Modificador static Exercício.zip" e execute a classe UsaProduto e responda as seguintes perguntas:
+- Quantas vezes o método de inicialização de classe foi executado?
+Foi executado uma vez.
+
+- Quantas vezes o método de inicialização de objetos foi executado?
+Foram executados duas vezes.
+
+Copie as classes Pessoa, Endereco, Cliente e UsaPessoa do exercício anterior, então tendo as classes Produto, Fornecedor, ProdutoDigital e UsaProduto como exemplo:
+
+-Na classe Pessoa:
+  - Transforme o atributo idadeMinima em um atriubto da classe (static) e crie os métodos de acesso (getter e setter).
+  - Crie um bloco estático que imprima o atributo idadeMinima
+-Na classe UsaPessoa:
+  - Imprima o valor da variável idadeMinima por meio deste código:
+    System.out.println("Idade mínima a partir da classe Pessoa " + Pessoa.getIdadeMinima());
+  - Crie um objeto do tipo Pessoa e um objeto do tipo Cliente
+  - Faça a alteração da idade mínima por meio do método set
+  - Imprima novamente o valor da variável idadeMinima por meio deste código:
+    System.out.println("Idade mínima a partir da classe Pessoa " + Pessoa.getIdadeMinima());

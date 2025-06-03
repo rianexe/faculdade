@@ -1,0 +1,11 @@
+07 Herança
+Teoria
+- Que visibiladade damos a um membro da classe (atributo ou método) quando usamos o modificador protected?
+Um membro protected é acessível dentro da mesma classe, em subclasses (mesmo que estejam em pacotes diferentes) e dentro do mesmo pacote.
+
+- Os métodos são herdados? E os construtores são herdados?
+Os métodos são herdados pelas subclasses, exceto os privados e os marcados como final. Já os construtores não são herdados, mas podem ser chamados na subclasse usando super().
+
+- O Java tem herança multípla?
+
+O Java não suporta herança múltipla de classes, mas permite herança múltipla por meio de interfaces, onde uma classe pode implementar várias interfaces.

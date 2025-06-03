@@ -1,0 +1,14 @@
+02B Atributos
+
+Teoria
+- Qual a convenção para definição do nome de um atributo?
+- Qual os valores padrão na inicialização de atributos?
+
+Prática
+Extraia o código fonte de "02B Atributos Exercício.zip", então tendo as classes Produto e UsaProduto como exemplo:
+
+- Na classe Pessoa:
+  - Crie dois atributos, nome do tipo String e idade do tipo int.
+- No método main da classe UsaPessoa:
+   - configure os atributos nome e idade dos dois objetos criados e imprima seus valores (System.out.println).
+

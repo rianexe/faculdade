@@ -1,0 +1,47 @@
+02A Classes e Objetos
+
+Teoria
+- Qual a diferença entre o Paradigma Procedural e o Paradigma Orientado a Objetos?
+
+O Paradigma Procedural organiza o código em funções e manipula dados de forma sequencial. 
+Já o Paradigma Orientado a Objetos (POO) organiza o código em classes e objetos, encapsulando dados e comportamentos.
+
+- O que é abstração no contexto da análise orientada a objetos?
+
+Abstração é o princípio que oculta detalhes internos e expõe apenas o necessário.
+
+- O que é coesão no contexto da análise orientada a objetos?
+
+Coesão mede o quão bem uma classe foca em uma única responsabilidade, tornando o código mais organizado e fácil de manter.
+
+Prática
+Tendo as classes Produto e UsaProduto como exemplo:
+
+- Crie a classe Pessoa
+- Crie a classe UsaPessoa executável, ou  seja, com o método main.
+   - no método main declare duas variáveis do tipo Pessoa e instancie dois objetos do tipo Pessoa
+
+-----------------------------------------------------------
+
+class Pessoa{
+	String nome;
+	int idade;
+}
+
+-----------------------------------------------------------
+
+
+class UsaPessoa{
+
+	public static void main(String[] args){
+		
+	Pessoa rian = new Pessoa();
+	Pessoa ana = new Pessoa();
+	System.out.println(rian);
+	System.out.println (ana);
+
+	}
+
+}
+
+------------------------------------------------------------

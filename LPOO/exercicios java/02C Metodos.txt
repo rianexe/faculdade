@@ -1,0 +1,74 @@
+02C Métodos
+
+Teoria
+- Qual a convenção para definição do nome de um método?
+
+A convenção para a definição de um método é começando com a letra minúscula, e utilizando verbos para indicar ações que realizará.
+Ex:
+
+fazerConta(){...}
+
+Prática
+Extraia o código fonte de "02C Métodos Exercício.zip", então tendo as classes Produto e UsaProduto como exemplo:
+
+- Na classe Pessoa:
+  - Crie um método inicializaPessoa que receba dois parâmetros e inicialize os dois atributos do objeto (nome e idade). (criei o atributo altura também)
+  - Crie um método imprime que imprima os atributos.
+- Na classe UsaPessoa
+  - Faça uso dos dois métodos para inicializar e imprimir os atributos dos objetos criados.
+
+--------------------------------------------------------------------
+class Pessoa {
+
+	String nome;
+	int idade;
+	double altura;
+
+//criei um atributo a mais por curiosidade
+
+	void inicializaPessoa(String novoNome, int novaIdade, double novaAltura){
+	
+		nome = novoNome;
+		idade = novaIdade;
+		altura = novaAltura;
+
+	}
+
+	void imprime(){
+
+		System.out.println("Meu nome: " + nome + "\nTenho " + idade + " anos." + "\nMinha altura: " + altura);
+	
+	}
+}
+
+------------------------------------------------------------------------
+public class UsaPessoa{
+
+	public static void main(String[] args){
+	Pessoa rian = new Pessoa();
+	rian.nome =  "rian souza rodrigues";
+	rian.idade = 19;
+	rian.altura = 1.80;
+
+	Pessoa ana = new Pessoa();
+	ana.nome = "ana clara alves";
+	ana.idade = 19;
+	ana.altura = 1.57;
+
+	rian.imprime();
+	ana.imprime(); 
+
+//imprimindo o primeiro valor atribuído, para depois atribuir utilizando o método inicializaPessoa
+
+	rian.inicializaPessoa("riaanexe", 20, 1.81);
+	ana.inicializaPessoa("irisshakti", 20, 1.58);
+
+	rian.imprime();
+	ana.imprime();
+
+//imprimindo os dois valores depois da atribuição
+
+	}
+}
+
+--------------------------------------------------------------------------

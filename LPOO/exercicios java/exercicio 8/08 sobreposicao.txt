@@ -1,0 +1,6 @@
+08 Sobreposição
+
+Teoria
+- Qual a função do sobreposição / sobreescrita (override)?
+
+A sobrescrita (override) permite que uma subclasse forneça uma nova implementação para um método herdado de sua superclasse. Isso é útil para modificar o comportamento de um método sem alterar a classe original, garantindo polimorfismo. Para sobrescrever um método em Java, usamos a anotação @Override.

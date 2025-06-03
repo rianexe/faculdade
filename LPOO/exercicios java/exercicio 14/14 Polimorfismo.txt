@@ -1,0 +1,18 @@
+14 Polimorfismo
+
+Teoria
+- Quando fazemos um cast de objetos (ver linhas abaixo), a estrutura do objeto é alterada?
+     ProdutoDigital pd = new ProdutoDigital("Mochila Grande", 50.0);
+     Produto p = (Produto) pd;
+	 
+Não, o cast não altera a estrutura real do objeto.
+
+- Podemos melhorar o acoplamento, quando optamos por um tipo mais genérico (super tipo ou interface comum)? Justifique.
+Sim, utilizar tipos mais genéricos reduz o acoplamento e melhora a flexibilidade do código.
+
+Prática
+Extraia o código fonte de "14 Polimorfismo Exercício.zip":
+- Siga as instruções dos comentários da classe ExemploCastUpCastDown, a compile e a execute e veja o resultado
+- Siga as instruções dos comentários da classe ExemploColecoesHeterogeneas, a compile e a execute e veja o resultado
+- Siga as instruções dos comentários da classe ExemploParametrosPolimorficos, a compile e a execute e veja o resultado
+- Siga as instruções dos comentários da classe ExemploRetornoPolimorfico, a compile e a execute e veja o resultado

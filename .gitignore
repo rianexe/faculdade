@@ -1,0 +1,13 @@
+# Arquivos compilados Java
+*.class
+
+# Pastas comuns de build
+bin/
+out/
+
+*.log
+*.tmp
+*.swp
+*.DS_Store
+.idea/
+.vscode/

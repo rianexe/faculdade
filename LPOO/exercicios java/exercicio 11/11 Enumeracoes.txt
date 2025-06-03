@@ -1,0 +1,26 @@
+Teoria
+- Qual a palavra chave que define uma enumeração?
+A palavra chave que define uma enumeração no java é 'enum'.
+
+- Qual a convenção para definição do nome de uma enumeração? E para os seus elementos?
+A convenção para a definição do nome de uma enumeração é em modelo PascalCase, na qual a primeira letra de cada palavra é maiúscula, enquanto para seus elementos, os valores devem ser todos escritos com letra maiúscula.
+
+- Os elementos de uma enumeração são constantes?
+Sim, os elementos de uma enumeração são constantes, garantindo que os valores do conjunto sejam fixos e imutáveis durante a execução do programa. 
+
+Prática
+Extraia o código fonte de "11 Enumerações Exercício.zip", então tendo as classes Produto, Fornecedor, ProdutoDigital e UsaProduto como exemplo:
+
+-Crie uma nova enumeração chamada TipoPessoa com dois elementos PF e PJ
+  - Crie um atributo privado descricao do tipo String
+  - Crie um método get para recuperar a descricao (não é para criar o set)
+  - Crie um construtor que receba uma String e configure o atributo descricao
+  - Use a sintaxe de chamada de construtor de uma enumeração* para passar uma String para o construtor
+    *  PF("Pessoa física")
+-Na classe Pessoa:
+  - Adicione um atributo tipo do tipo TipoPessoa e o encapsule fortemente
+  - Inicialize o atributo na sua declaração* com o padrão PF
+    * private TipoPessoa tipo = TipoPessoa.PF;
+  - Altere o método imprime para que ele imprima a descrição do tipo
+-Na classe UsaPessoa:
+  - Crie um objeto do tipo Pessoa e chame o método imprime

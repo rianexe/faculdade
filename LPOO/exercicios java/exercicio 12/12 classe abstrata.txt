@@ -1,0 +1,60 @@
+12 - Classe abstrata
+Teoria
+- Onde podemos aplicar o modificador abstract?
+
+	O modificador static pode ser usado em classes, métodos e atributos que
+	não serão instanciados. 
+
+- Uma classe que contém um método abstrato precisa ser abstrata?
+
+	Sim, se a classe tiver ao menos um método abstrato, então deverá ser
+	abstrata.
+ 
+- Uma classe pode ser abstrata sem ter um método abstrato?
+
+	Uma classe abstrata pode ter métodos concretos (com implementação) e
+	atributos, como qualquer outra classe. A diferença é que uma classe abstrata não
+	pode ser instanciada diretamente. Ela precisa ser herdada por uma subclasse que
+	implemente seus métodos abstratos.
+
+Prática
+
+public class UsaPessoa {
+    public static void main(String[] args) {
+        Pessoa rian = new Pessoa("rian",20);
+        
+        ImpressoraPessoaXml impressorPessoaXml = new ImpressoraPessoaXml();
+        impressorPessoaXml.setPessoa(rian);
+        impressorPessoaXml.imprimePessoa();
+
+        ImpressoraPessoaPipe impressoraPipe = new ImpressoraPessoaPipe();
+        impressoraPipe.setPessoa(rian);
+        impressoraPipe.imprimePessoa();
+    }
+}
+
+public class ImpressoraPessoaPipe extends ImpressoraPessoa{
+
+@Override
+public void imprimePessoa(){
+if (valida()){
+	System.out.println(pessoa.getNome()+" | "+ pessoa.getIdade());
+	}
+}
+
+
+}
+
+public class ImpressoraPessoaXml extends ImpressoraPessoa{
+
+@Override
+	public void imprimePessoa(){
+	if (valida()){
+		System.out.println("<? xml>");
+		System.out.print("<idade>" + pessoa.getIdade()+ "</idade>");
+		System.out.println("<nome>" + pessoa.getNome() + "</nome>");
+		}
+	}
+
+
+}

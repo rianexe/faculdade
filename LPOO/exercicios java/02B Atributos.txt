@@ -1,0 +1,55 @@
+02B Atributos
+
+Teoria
+- Qual a convenção para definição do nome de um atributo?
+
+A convenção para a definição do nome de um atributo, devem começar com a letra minúscula e sem espaços, e se for uma palavra composta, a segunda palavra deve ter a primeira letra maiúscula.
+Ex: 
+int idade
+int novaIdade
+
+- Qual os valores padrão na inicialização de atributos?
+
+Os valores padrão são 0,null e false. Dependendo do tipo do atributo (int, boolean, double, etc.).
+
+Prática
+Extraia o código fonte de "02B Atributos Exercício.zip", então tendo as classes Produto e UsaProduto como exemplo:
+
+- Na classe Pessoa:
+  - Crie dois atributos, nome do tipo String e idade do tipo int.
+- No método main da classe UsaPessoa:
+   - configure os atributos nome e idade dos dois objetos criados e imprima seus valores (System.out.println).
+
+--------------------------------------------------
+
+class Pessoa{
+
+	String nome;
+	int idade;
+
+}
+
+--------------------------------------------------
+
+public class UsaPessoa{
+
+	public static void main (String[] args){
+	
+		Pessoa rian = new Pessoa();
+		Pessoa ana = new Pessoa();
+
+		rian.nome = "rian rodrigues";
+		rian.idade = 20;
+		ana.nome = "ana clara";
+		ana.idade = 19;
+
+		System.out.println(rian.nome + " " + rian.idade);
+		System.out.println(ana.nome + " " + ana.idade);
+	
+
+	}
+
+}
+
+
+--------------------------------------------------

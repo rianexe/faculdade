@@ -1,0 +1,87 @@
+13 Interface 
+
+Teoria
+- Quando declaramos um método em uma interface, qual a sua visibilidade (public, protected, <default> ou private)?
+
+Em Java, todos os métodos em uma interface são implicitamente public e abstract, mesmo que você não escreva isso.
+
+- Qual é a palavra reservada da linguagem usada para implementar uma interface?
+
+A palavra-chave é implements.
+
+Prática
+
+public class UsaPessoa {
+    public static void main(String[] args) {
+        Produto produto = new Produto("Notebook", 3000.0);
+
+        Parceladora boleto = new ParceladoraBoleto();
+        PlanoDePagamento planoBoleto = boleto.parcela(produto);
+        System.out.println("Plano Boleto:");
+        planoBoleto.imprimirPlano();
+
+        System.out.println();
+
+        Parceladora cheque = new ParceladoraCheque();
+        PlanoDePagamento planoCheque = cheque.parcela(produto);
+        System.out.println("Plano Cheque:");
+        planoCheque.imprimirPlano();
+    }
+}
+
+public class Produto {
+    private String nome;
+    private double preco;
+
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+}
+
+public class PlanoDePagamento {
+    private String meioPagamento;
+    private int numeroParcelas;
+    private double valorParcela;
+
+    public PlanoDePagamento(String meioPagamento, int numeroParcelas, double valorParcela) {
+        this.meioPagamento = meioPagamento;
+        this.numeroParcelas = numeroParcelas;
+        this.valorParcela = valorParcela;
+    }
+
+    public void imprimirPlano() {
+        System.out.println("Meio de pagamento: " + meioPagamento);
+        System.out.println("Parcelas: " + numeroParcelas);
+        System.out.printf("Valor de cada parcela: R$ %.2f%n", valorParcela);
+    }
+}
+
+public class ParceladoraBoleto implements Parceladora {
+    @Override
+    public PlanoDePagamento parcela(Produto produto) {
+        double valorParcela = produto.getPreco() / 2;
+        return new PlanoDePagamento("Boleto", 2, valorParcela);
+    }
+}
+
+public class ParceladoraCheque implements Parceladora {
+    @Override
+    public PlanoDePagamento parcela(Produto produto) {
+        double precoComJuros = produto.getPreco() * 1.05;
+        double valorParcela = precoComJuros / 3;
+        return new PlanoDePagamento("Cheque", 3, valorParcela);
+    }
+}
+
+public interface Parceladora {
+    PlanoDePagamento parcela(Produto produto);
+}

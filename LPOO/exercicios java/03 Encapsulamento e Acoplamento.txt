@@ -1,0 +1,40 @@
+03 Encapsulamento e Acoplamento
+
+Teoria
+- Quais é o objetivo e vantagens de realizar o encapsulamento?
+
+O encapsulamento protege os dados da classe, impedindo acesso direto e garantindo que sejam manipulados apenas por método, melhora a segurança, facilita a manutenção e aumenta a modularidade do código.
+
+- Que visibiladade damos a um membro da classe (atributo ou método) quando usamos o modificador public? E o modificador private?
+
+Public permite que o atributo ou método seja acessado de qualquer outra classe.
+Private restringe o acesso apenas à própria classe.
+
+- Qual a função da palavra reservada this?
+
+É usado para referenciar o próprio objeto dentro da classe.
+
+03A Acoplamento Estrutura
+
+Teoria
+- Como podemos definir acoplamento no contexto da Programação Orientada a Objetos?
+
+O acoplamento na Programação Orientada a Objetos (POO) refere-se ao nível de dependência entre classes ou módulos de um sistema.O ideal é buscar um baixo acoplamento junto com alta coesão, garantindo um código mais modular e de fácil manutenção. 
+
+Prática
+- Extraia o arquivo "03A Acoplamento Estrutura.zip" e observe* os códigos com seus comentários nos exemplos ExemploAcoplamentoForte.zip e ExemploAcoplamentoFraco.zip e aponte os benefícios do uso de encapsulamento neste exemplo
+*Dicas:
+ - Qual é a API mais facil de usar?
+ - Tente adicionar um Produto nulo em cada um dos exemplos e veja o que acontece
+
+O uso do encapsulamento protege os dados (atributos privados), evita a inserção de valores inválidos e facilita a manutenção.
+
+03B Acoplamento Funcionalidade
+
+Prática
+- Extraia o arquivo "03B Acoplamento Funcionalidade.zip" e observe* os códigos com seus comentários nos exemplos ExemploAcoplamentoForte.zip e ExemploAcoplamentoFraco.zip e aponte os benefícios do uso de encapsulamento neste exemplo
+*Dicas:
+ - Qual é a API mais fácil de usar?
+ - E correto emitir uma nota fiscal de um produto que não existe?
+
+O uso do encapsulamento torna a API mais fácil de usar quando há baixo acoplamento, evita dependências desnecessárias entre classes e facilita a manutenção.

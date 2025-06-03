@@ -1,0 +1,26 @@
+05 Construtor
+
+Teoria
+- O que acontece quando compilamos uma classe na qual não definimos um construtor?
+
+O compilador adiciona automaticamente um construtor padrão sem parâmetros.
+
+- Qual é a sintaxe para definição de um construtor? E para invocar (chamar) um construtor?
+
+class Objeto {
+    Objeto() { 
+        System.out.println("Objeto criado!");
+    }
+}
+
+- É possível realizar a sobrecarga de um construtor?
+
+Sim, é possível definir vários construtores com parâmetros diferentes, seguindo as mesmas regras de sobrecarga de métodos.
+
+- É possível chamar outro construtor da mesma classe em qualquer parte do código? Qual é a sintaxe?
+
+Não, a chamada deve ser a primeira instrução dentro de um construtor, usando this().
+
+- Quando um bloco de inicialização de objetos é chamado? ({})
+
+Um bloco {} de inicialização é executado antes do construtor, sempre que um objeto é instanciado.

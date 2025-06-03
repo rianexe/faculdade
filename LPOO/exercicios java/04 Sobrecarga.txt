@@ -1,0 +1,10 @@
+04 Sobrecarga
+
+Teoria
+- Qual é a regra para definirmos a sobrecarga (overload) de um método?
+
+Deve-se manter o mesmo nome do método, mas com parâmetros diferentes (tipo, quantidade ou ordem). O retorno pode mudar, mas não diferencia sobrecarga.
+
+- Podemos declarar apenas um parâmetro como varargs, e isso só é permitido em qual posição da lista de parâmetros.
+
+Só pode haver um único parâmetro varargs, e ele deve estar na última posição da lista de parâmetros.
